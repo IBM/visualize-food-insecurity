@@ -3,7 +3,7 @@ IBM Journey showing how to visualize US Food Insecurity with Pixie Dust and Wats
 
 Often in data science we do a great deal of work to glean insights that have an impact on society or a subset of it and yet, often, we end up not communicating it or communicating it ineffectively. That's where visualizations become the most powerful. By visualizing our insights and predictions, we, as data scientists and data lovers, can make a real impact and educate those around us that didn't have the opportunity to work on the same project. This journey walks you through how to do just that, with IBM's Data Science Experience (DSX), Pixie Dust and Watson Analytics.
 
-For this particular journey, food insecurity in the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. This has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv.  
+For this particular journey, food insecurity in the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. This has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/.
 
 ### What is DSX, Pixie Dust and Watson Analytics and why should I care enough about them to use them for my visualizations?
 
@@ -46,4 +46,10 @@ Once you follow along, you can take the new .csv (found under "Data Services" --
 
 ### Using Watson to visualize our insights.
 
-The Watson plaform has three sections: data, discover and display. You uploaded your data to the "data" section, but now you'll want to go to the "discover" section.
+The Watson plaform has three sections: data, discover and display. You uploaded your data to the "data" section, but now you'll want to go to the "discover" section. Under "discover" you can select your dataframe dataset for use. Once you've selected it, the Watson platform will suggest different insights to visualize. You can move forward with its selections or your own, or both. You can take a look at mine here: https://ibm.co/2xAlAkq or see the screen shots attached to this repo.
+
+You can see that with these visualizations the user can see the impact of food insecurity by state, geographically distributed and used aid such as reduced school lunches, a map of diabetes by state, a predictive model for food insecurity and diabetes (showcasing the factors that, in combination, suggest a likelihood of food insecurity), drivers of adult diabetes, drivers of food insecurity, the relationship with the frequency of farmers market locations, food insecurity and adult obesity, as well as the relationship between farmers markets, the percent of the population that is Asian, food insecurity and poverty rates.
+
+By reviewing our visualizations both in DSX and Watson, we learn that obesity and diabetes almost go hand in hand, along with food insecurity. We can also learn that this seems to be an inequality issue, both in income and race, with Black and Hispanic populations being more heavily impacted by food insecurity and diet-related diseases than those of the White and Asian populations. We can also see that school-aged children who qualify for reduced lunch are more likely obese than not whereas those that have a farm-to-school program are more unlikely to be obese.
+
+Like many data science investigations, this analysis could have a big impact on policy and people's approach to food insecurity in the U.S. What's best is that we can create many projects must like this in a quick time period by using Pixie Dust as well as Watson's predictive and recommended visualizations.
