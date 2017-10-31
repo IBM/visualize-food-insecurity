@@ -2338,7 +2338,7 @@ display(df_focusedvalues)
 ```
 
 
-em>Hey, there's something awesome here! To see it, open this notebook outside GitHub, in a viewer like Jupyter</em>
+<em>Hey, there's something awesome here! To see it, open this notebook outside GitHub, in a viewer like Jupyter</em>
     
 
 ```python
