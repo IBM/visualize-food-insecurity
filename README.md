@@ -22,9 +22,9 @@ The government data that I use in this journey has been conveniently combined in
 
 ## Architecture Image
 
-![Architecture Image](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/images/FoodInsecurityArchDiagram.png "Architecture Image")
+![Architecture Image](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/images/Architecture.png "Architecture Image")
 
-![alt text](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/images/FoodInsecurityArchDiagram.png)
+![alt text](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/images/Architecture.png)
 
 ## Flow
 
