@@ -32,10 +32,6 @@ The government data that I use in this journey has been conveniently combined in
 4. Download dataframe as a csv from DSX.
 5. Upload the csv to Watson Analytics and visualize.
 
-## With Watson
-
-Copy the **With Watson** section and use it as-is (unless you don't use Watson at all).
-
 ## Included components
 
  - IBM Data Science Experience: Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
