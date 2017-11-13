@@ -79,11 +79,11 @@ Use a final _Analyze the results_ or _Conclusion_ step above, plus sample output
 
 ## Links
 
-DSX:https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
-IBM Watson Analytics: https://www.ibm.com/watson-analytics
-Pandas:http://pandas.pydata.org/
-Pixie Dust: https://ibm-watson-data-lab.github.io/pixiedust/displayapi.html#introduction
-Data:https://www.bls.gov/cex/ ; https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/.
+ - DSX:https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
+ - IBM Watson Analytics: https://www.ibm.com/watson-analytics
+ - Pandas:http://pandas.pydata.org/
+ - Pixie Dust: https://ibm-watson-data-lab.github.io/pixiedust/displayapi.html#introduction
+ - Data:https://www.bls.gov/cex/ ; https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/.
 
 
 ## Troubleshooting
