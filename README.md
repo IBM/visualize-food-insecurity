@@ -24,6 +24,8 @@ The government data that I use in this journey has been conveniently combined in
 
 ![Architecture Image](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/images/FoodInsecurityArchDiagram.png "Architecture Image")
 
+![alt text](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/images/FoodInsecurityArchDiagram.png)
+
 ## Flow
 
 1. Open DSX and create a notebook.
