@@ -34,19 +34,17 @@ The government data that I use in this journey has been conveniently combined in
 
 ## Included components
 
- - IBM Data Science Experience: Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
- - Jupyter Notebook: An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
- -PixieDust: Provides a Python helper library for IPython Notebook.
- -Watson Discovery: A cognitive search and content analytics engine for applications to identify patterns, trends, and actionable insights.
+* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
+* [PixieDust](https://github.com/ibm-watson-data-lab/pixiedust): Provides a Python helper library for IPython Notebook.
+* [Watson Discovery](https://www.ibm.com/watson/developercloud/discovery.html): A cognitive search and content analytics engine for applications to identify patterns, trends, and actionable insights.
 
 ## Featured technologies
 
- - Cloud: Accessing computer and information technology resources through the Internet.
- - Data Science: Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
- - Python: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
- - pandas: A Python library providing high-performance, easy-to-use data structures.
- - PixieDust: PixieDust is an open source helper library that works as an add-on to Jupyter notebooks to improve the user experience of working with data.
- - Jupyter Notebooks: An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
+* [Cloud](https://www.ibm.com/developerworks/learn/cloud/): Accessing computer and information technology resources through the Internet.
+* [Data Science](https://medium.com/ibm-data-science-experience/): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
+* [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+* [pandas](http://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
 
 ## Watch the Video
 
