@@ -22,7 +22,7 @@ The government data that I use in this journey has been conveniently combined in
 
 ## Architecture Image
 
-![alt text](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/images/Architecture.png)
+![alt text](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/doc/source/images/Architecture.png)
 
 ## Flow
 
