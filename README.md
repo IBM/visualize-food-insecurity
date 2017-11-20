@@ -1,26 +1,14 @@
 
-## Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics
-_IBM Journey showing how to visualize US Food Insecurity with Pixie Dust and Watson Analytics._
+## Visualizing Food Insecurity with Pixie Dust and Watson Analytics
+_IBM code pattern showing how to visualize US Food Insecurity with Pixie Dust and Watson Analytics._
 
-## Badges
+This code pattern will guide you through downloading, cleaning and visualizing data using different tools. In particular this code pattern showcases food insecurity in the US, along with its associated factors.
 
-Most journeys will have badges, such as CI status and Bluemix Deployments. Badges should be at the very top, before the title. They should be side-by-side on one line.
+Often in data science we do a great deal of work to glean insights that have an impact on society or a subset of it and yet, often, we end up not communicating our findings or communicating them ineffectively to non data science audiences. That's where visualizations become the most powerful. By visualizing our insights and predictions, we, as data scientists and data lovers, can make a real impact and educate those around us that might not have had the same opportunity to work on a project of the same subject. By visualizing our findings and those insights that have the most power to do social good, we can bring awareness and maybe even change. This code pattern walks you through how to do just that, with IBM's Data Science Experience (DSX), Pandas, Pixie Dust and Watson Analytics.
 
-## Title
+For this particular code pattern, food insecurity throughout the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. For some context, this problem is a more and more relevant problem for the United States as obesity and diabetes rise and two out of three adult Americans are considered obese, one third of American minors are considered obsese, nearly ten percent of Americans have diabetes and nearly fifty percent of the African American population have heart disease. Even more, cardiovascular disease is the leading global cause of death, accounting for 17.3 million deaths per year, and rising. Native American populations more often than not do not have grocery stores on their reservation... and all of these trends are on the rise. The problem lies not only in low access to fresh produce, but food culture, low education on healthy eating as well as racial and income inequality.
 
-Create Visualizations Using Pixie Dust, DSX and Watson Analytics
-
-## Intro
-
-This journey will guide you through downloading, cleaning and visualizing data using different tools. In particular this journey showcases food insecurity in the US, along with its associated factors.
-
-Often in data science we do a great deal of work to glean insights that have an impact on society or a subset of it and yet, often, we end up not communicating our findings or communicating them ineffectively to non data science audiences. That's where visualizations become the most powerful. By visualizing our insights and predictions, we, as data scientists and data lovers, can make a real impact and educate those around us that might not have had the same opportunity to work on a project of the same subject. By visualizing our findings and those insights that have the most power to do social good, we can bring awareness and maybe even change. This journey walks you through how to do just that, with IBM's Data Science Experience (DSX), Pandas, Pixie Dust and Watson Analytics.
-
-For this particular journey, food insecurity throughout the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. For some context, this problem is a more and more relevant problem for the United States as obesity and diabetes rise and two out of three adult Americans are considered obese, one third of American minors are considered obsese, nearly ten percent of Americans have diabetes and nearly fifty percent of the African American population have heart disease. Even more, cardiovascular disease is the leading global cause of death, accounting for 17.3 million deaths per year, and rising. Native American populations more often than not do not have grocery stores on their reservation... and all of these trends are on the rise. The problem lies not only in low access to fresh produce, but food culture, low education on healthy eating as well as racial and income inequality.
-
-The government data that I use in this journey has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/.
-
-## Architecture Image
+The government data that I use in this code pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/.
 
 ![alt text](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/doc/source/images/Architecture.png)
 
@@ -48,7 +36,7 @@ The government data that I use in this journey has been conveniently combined in
 
 ## Watch the Video
 
-See the template or example journeys for how to include a link to your video with a preview. Say the YouTube video is at `https://www.youtube.com/watch?v=Jxi7U7VOMYg`, that means the video ID is `Jxi7U7VOMYg`. To generate a video preview, add the following snippet, replacing `Jxi7U7VOMYg` with the new video ID:  ``[![](http://img.youtube.com/vi/Jxi7U7VOMYg/0.jpg)](https://youtu.be/Jxi7U7VOMYg)``
+See the template or example code patterns for how to include a link to your video with a preview. Say the YouTube video is at `https://www.youtube.com/watch?v=Jxi7U7VOMYg`, that means the video ID is `Jxi7U7VOMYg`. To generate a video preview, add the following snippet, replacing `Jxi7U7VOMYg` with the new video ID:  ``[![](http://img.youtube.com/vi/Jxi7U7VOMYg/0.jpg)](https://youtu.be/Jxi7U7VOMYg)``
 
 ## Steps
 
@@ -69,7 +57,7 @@ This pattern runs through the steps below. Check out the notebook for the code!
 
 ## Sample output
 
-Use a final _Analyze the results_ or _Conclusion_ step above, plus sample output to wrap up the journey for a developer running it and also for people that are only going to read the README. Sample output format will vary depending on the journey technology used.
+Use a final _Analyze the results_ or _Conclusion_ step above, plus sample output to wrap up the code pattern for a developer running it and also for people that are only going to read the README. Sample output format will vary depending on the code pattern technology used.
 
 ## Links
 
