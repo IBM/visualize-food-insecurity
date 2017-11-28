@@ -1,6 +1,4 @@
-
 ## Visualizing Food Insecurity with Pixie Dust and Watson Analytics
-_IBM code pattern showing how to visualize US Food Insecurity with Pixie Dust and Watson Analytics._
 
 This code pattern will guide you through downloading, cleaning and visualizing data using different tools. In particular this code pattern showcases food insecurity in the US, along with its associated factors.
 
@@ -10,7 +8,7 @@ For this particular code pattern, food insecurity throughout the US is focused o
 
 The government data that I use in this code pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/.
 
-![alt text](https://github.com/MadisonJMyers/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/doc/source/images/Architecture.png)
+![](doc/source/images/Architecture.png)
 
 ## Flow
 
@@ -23,6 +21,7 @@ The government data that I use in this code pattern has been conveniently combin
 ## Included components
 
 * [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Analytics](https://www.ibm.com/watson-analytics): NEED BLURB HERE
 * [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
 * [PixieDust](https://github.com/ibm-watson-data-lab/pixiedust): Provides a Python helper library for IPython Notebook.
 * [Watson Discovery](https://www.ibm.com/watson/developercloud/discovery.html): A cognitive search and content analytics engine for applications to identify patterns, trends, and actionable insights.
@@ -34,15 +33,13 @@ The government data that I use in this code pattern has been conveniently combin
 * [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
 * [pandas](http://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
 
-## Watch the Video
+# Watch the Video
 
-See the template or example code patterns for how to include a link to your video with a preview. Say the YouTube video is at `https://www.youtube.com/watch?v=Jxi7U7VOMYg`, that means the video ID is `Jxi7U7VOMYg`. To generate a video preview, add the following snippet, replacing `Jxi7U7VOMYg` with the new video ID:  ``[![](http://img.youtube.com/vi/Jxi7U7VOMYg/0.jpg)](https://youtu.be/Jxi7U7VOMYg)``
+!!! COMING
 
-## Steps
+# Steps
 
 This pattern runs through the steps below. Check out the notebook for the code!
-
-
 
     1. Sign up for the Data Science Experience
     2. Create the notebook
@@ -172,25 +169,22 @@ You can share your notebook by selecting the “Share” button located in the t
 
 Use a final _Analyze the results_ or _Conclusion_ step above, plus sample output to wrap up the code pattern for a developer running it and also for people that are only going to read the README. Sample output format will vary depending on the code pattern technology used.
 
-## Links
-
- - DSX:https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
- - IBM Watson Analytics: https://www.ibm.com/watson-analytics
- - Pandas:http://pandas.pydata.org/
- - Pixie Dust: https://ibm-watson-data-lab.github.io/pixiedust/displayapi.html#introduction
- - Data:https://www.bls.gov/cex/ ; https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/.
-
-
-## Troubleshooting
+# Troubleshooting
 
 Please follow the example format or contribute templates or suggestions. Break out troubleshooting into it's own .MD file when the section gets long.
 
+# Links
 
+* [Create Data Science Experience Notebooks](https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html)
+* [Bureau of Labor Statistics](https://www.bls.gov/cex/)
+* [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/)
 
-Copyright 2017 IBM Corp. All Rights Reserved.
+# Learn more
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
+* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
+* **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
+* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
 
-   ```http://www.apache.org/licenses/LICENSE-2.0```
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+# License
+[Apache 2.0](LICENSE)
