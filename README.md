@@ -90,11 +90,11 @@ Create the Notebook:
     For Notebook URL enter: https://github.com/IBM/spark-tpc-ds-performance-test/blob/master/notebooks/run-tpcds-on-spark.ipynb
     For Spark Service, select your Apache Spark service name.
     Click Create Notebook.
-    
+
 3. Upload your data as a data asset into DSX.
 
    To begin, I used the combined_data.csv as my data asset. You'll want to upload it as a data asset and once that is    complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). To load your data in your notebook, you'll click on the "1001" data icon in the top right. The combined_data.csv should show up. Click on it and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. Once you see that, run the cell and follow along with my tutorial!
-   
+
 4. Load the data (in the right hand corner select the '1001' button and select import as a pandas dataframe.)
 5. Explore the data in python and visualize the correlations.
 6. Remove irrelevant variables as well as 0 and NaN values and create a new, smaller dataframe.
@@ -106,7 +106,7 @@ Create the Notebook:
 ```display(your_dataframe_name)```
 
    After doing this your dataframe will show up in a column-row table format. To visualize your data, you can click the chart icon at the top left (looks like an arrow going up). From there you can choose from a variety of visuals. Once you select the type of chart you want, you can then select the variables you want to showcase. It's worth playing around with this to see how you can create the most effective visualizations for your audience. The notebook below showcases a couple options such as scatterplots, bar charts, line charts, and histograms.
-   
+
 9. Run the notebook
 
 When a notebook is executed, what is actually happening is that each code cell in the notebook is executed, in order, from top to bottom.
@@ -150,7 +150,7 @@ You can share your notebook by selecting the “Share” button located in the t
     Unfortunately, in DSX we cannot download our dataframe as a csv in one line of code, but we can download it to DSX so that   it can be downloaded and used elsewhere as well as for other projects. I demonstrate how to do this in the notebook.
 
     Once you follow along, you can take the new .csv (found under "Data Services" --> "Object Storage" from the top button) and upload it to Watson Analytics. Again, if you do not have an account, you'll want to set one up. Once you are logged in and ready to go, you can upload the data (saved in this repo as df_focusedvalues.csv) to your Watson platform.
-    
+
 12. Upload our new dataframe csv into Watson Analytics.
 
 13. Check out the discoveries that Watson Analytics offers.
