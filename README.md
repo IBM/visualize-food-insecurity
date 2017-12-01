@@ -58,11 +58,11 @@ This pattern runs through the steps below. Check out the notebook for the code!
 
 1. Sign up for the Data Science Experience
 
-Sign up for IBM's Data Science Experience. By signing up for the Data Science Experience, two services: DSX-Spark and DSX-ObjectStore will be created in your Bluemix account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+Sign up for IBM's Data Science Experience. By signing up for the Data Science Experience, two services: DSX-Spark and DSX-ObjectStore will be created in your IBM Cloud account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
 
 To create these services:
 
-    Login to your Bluemix account.
+    Login to your IBM Cloud account.
     Create your Spark service by selecting the service type Apache Spark. If not already used, name your service DSX-Spark.
     Create your Object Storage service by selecting the service type Cloud Object Storage. If not already used, name your service DSX-ObjectStorage.
 
