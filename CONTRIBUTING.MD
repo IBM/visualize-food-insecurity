@@ -53,4 +53,4 @@ Please test your code before submitting any additions.
 
 ## Coding style guidelines
 
-Beautiful code rocks! 
+Beautiful code rocks!
