@@ -41,7 +41,7 @@ The government data that I use in this Code Pattern has been conveniently combin
 
 This Code Pattern consists of two activities:
 
-* Run a Jupyter notebook in the IBM Data Sciencee Experience.
+* [Run a Jupyter notebook in the IBM Data Science Experience](#run-a-jupyter-notebook-in-the-ibm-data-science-experience)
 * [Anaylze the data in Watson Analytics](#analyze-the-data-in-watson-analytics).
 
 ## Run a Jupyter notebook in the IBM Data Science Experience
@@ -64,6 +64,8 @@ To create these services:
 
 Take note of your service names as you will need to select them in the following steps.
 
+![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
+
 ### 2. Create the notebook
 
 First you must create a new Project:
@@ -75,7 +77,6 @@ First you must create a new Project:
 * For ``Target Object Storage Instance``, select your Object Storage service name.
 * Click ``Create``.
 
-![](doc/source/images/create-project.png)
 
 Create the Notebook:
 * Click on your project to open up the project details panel.
@@ -85,7 +86,8 @@ Create the Notebook:
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
-![](doc/source/images/create-notebook.png)
+![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
+
 
 ### 3. Run the notebook
 
@@ -154,23 +156,28 @@ Once you follow along, you can take the new .csv (found under "Data Services" --
     
 ### 2. Upload our new dataframe csv into Watson Analytics
 
-ADD DESCRIPTION
+Once you login to Watson Analytics you can upload the csv you just downloaded and use it in your next steps. Do this in the "data" section and push "New data". This should only take a few moments to load.
+
+![](doc/source/images/Screen%20Shot%202017-10-30%20at%204.06.20%20PM.png)
 
 ### 3. Check out the discoveries that Watson Analytics offers
 
 Once you've set up your account, you can see that the Watson plaform has three sections: data, discover and display. You uploaded your data to the "data" section, but now you'll want to go to the "discover" section. Under "discover" you can select your dataframe dataset for use. Once you've selected it, the Watson platform will suggest different insights to visualize. You can move forward with its selections or your own, or both. You can take a look at mine here (you'll need an account to view): https://ibm.co/2xAlAkq or see the screen shots attached to this repo. You can also go into the "display" section and create a shareable layout like mine (again you'll need an account): https://ibm.co/2A38Kg6.
 
+![](doc/source/images/Screen%20Shot%202017-10-30%20at%204.05.53%20PM.png)
+
 ### 4. Suggest different relationships to visualize in the display section of Watson Analytics
 
 You can see that with these visualizations the user can see the impact of food insecurity by state, geographically distributed and used aid such as reduced school lunches, a map of diabetes by state, a predictive model for food insecurity and diabetes (showcasing the factors that, in combination, suggest a likelihood of food insecurity), drivers of adult diabetes, drivers of food insecurity, the relationship with the frequency of farmers market locations, food insecurity and adult obesity, as well as the relationship between farmers markets, the percent of the population that is Asian, food insecurity and poverty rates.
+
+
+## Sample output
 
 By reviewing our visualizations both in DSX and Watson, we learn that obesity and diabetes almost go hand in hand, along with food insecurity. We can also learn that this seems to be an inequality issue, both in income and race, with Black and Hispanic populations being more heavily impacted by food insecurity and diet-related diseases than those of the White and Asian populations. We can also see that school-aged children who qualify for reduced lunch are more likely obese than not whereas those that have a farm-to-school program are more unlikely to be obese.
 
 Like many data science investigations, this analysis could have a big impact on policy and people's approach to food insecurity in the U.S. What's best is that we can create many projects much like this in a quick time period and share them with others by using Pandas, Pixie Dust as well as Watson's predictive and recommended visualizations.
 
-## Sample output
-
-Use a final _Analyze the results_ or _Conclusion_ step above, plus sample output to wrap up the Code Pattern for a developer running it and also for people that are only going to read the README. Sample output format will vary depending on the Code Pattern technology used.
+![](doc/source/images/Screen%20Shot%202017-10-30%20at%204.29.41%20PM.png)
 
 # Troubleshooting
 
