@@ -86,7 +86,7 @@ Create the Notebook or [Follow along in the DSX notebook I created](https://data
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
-* If you're [following along](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b), you can skip step 2.1 and just run the notebook as is!
+* If you're [following along](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b), you can skip [step 2.1](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/README.md#1-download-our-new-dataframe-from-dsx) and just run the notebook as is!
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
 
