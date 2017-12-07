@@ -78,13 +78,15 @@ First you must create a new Project:
 * Click ``Create``.
 
 
-Create the Notebook:
+Create the Notebook or [Follow along in the DSX notebook I created](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b):
 * Click on your project to open up the project details panel.
 * Click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
 * For ``Notebook URL`` enter: https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/notebooks/Diet-Related-Disease-Exploratory.ipynb
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
+
+* If you're [following along](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b), you can skip step 2.1 and just run the notebook as is!
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
 
