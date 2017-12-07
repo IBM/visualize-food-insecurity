@@ -82,7 +82,7 @@ Create the Notebook:
 * Click on your project to open up the project details panel.
 * Click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* For ``Notebook URL`` enter: https://github.com/IBM/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/notebooks/Diet-Related-Disease-Exploration.ipynb
+* For ``Notebook URL`` enter: https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/notebooks/Diet-Related-Disease-Exploratory.ipynb
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
