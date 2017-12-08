@@ -95,7 +95,7 @@ Take note of your service names as you will need to select them in the following
 ##### 2. [Follow along in the DSX notebook I created](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b)
 * If you're [following along](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b), you can view the notebook and its outputs as is.
 * You can also download the notebook from this link to store for future use.
-* After viewing the notebook and its output, you can head straight to [Analyze the data in Watson Analytics](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#analyze-the-data-in-watson-analytics)
+* After viewing the notebook and its output, you can head straight to [Analyze the data in Watson Analytics](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#analyze-the-data-in-watson-analytics).
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
 
