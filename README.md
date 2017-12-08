@@ -66,11 +66,11 @@ Take note of your service names as you will need to select them in the following
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
 
-### 2. Create the notebook
+### 2. Create the Notebook
 
-### 2.1. Create a new Project and Notebook 
+#### Create a new Project and Notebook 
 *OR*
-### 2.2. Follow along and view the completed notebook
+#### Follow along and view the completed Notebook
 
 1. First you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
