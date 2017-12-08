@@ -70,7 +70,7 @@ Take note of your service names as you will need to select them in the following
 
 #### 2.1 Create a new Project and Notebook 
 *OR*
-#### 2.2 Follow along and view the completed Notebook
+#### 2.2 [Follow along and view the completed Notebook](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/README.md#2-follow-along-in-the-dsx-notebook-i-created)
 
 ##### 1. First you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
@@ -82,7 +82,7 @@ Take note of your service names as you will need to select them in the following
 * Click ``Create``.
 
 
-Create the Notebook:
+##### Create the Notebook:
 * Click on your project to open up the project details panel.
 * Click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
