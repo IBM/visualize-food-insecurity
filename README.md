@@ -6,7 +6,7 @@ Often in data science we do a great deal of work to glean insights that have an 
 
 For this particular Code Pattern, food insecurity throughout the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. For some context, this problem is a more and more relevant problem for the United States as obesity and diabetes rise and two out of three adult Americans are considered obese, one third of American minors are considered obsese, nearly ten percent of Americans have diabetes and nearly fifty percent of the African American population have heart disease. Even more, cardiovascular disease is the leading global cause of death, accounting for 17.3 million deaths per year, and rising. Native American populations more often than not do not have grocery stores on their reservation... and all of these trends are on the rise. The problem lies not only in low access to fresh produce, but food culture, low education on healthy eating as well as racial and income inequality.
 
-The government data that I use in this Code Pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/.
+The government data that I use in this Code Pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/. For the data we use in the second part of this Code Pattern with Watson Analytics, you can go to [df_focusedvalues.csv](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv) in this repo. You will need a DSX account and a Watson Analytics account to run the duration of this Code Pattern, but you can follow along with the [steps](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#steps) below!
 
 ![](doc/source/images/Architecture.png)
 
@@ -66,7 +66,12 @@ Take note of your service names as you will need to select them in the following
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
 
-### 2. Create the notebook
+### 2. Create the Notebook
+
+> Note: if you would prefer to skip these steps and just follow along by viewing the completed Notebook, simply:
+> * View the completed [notebook](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b) and its outputs, as is.
+> * While viewing the notebook, you can optionally download it to store for future use.
+> * When complete, continue this code pattern by jumping ahead to the [Analyze the data in Watson Analytics](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#analyze-the-data-in-watson-analytics) section.
 
 First you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
@@ -77,19 +82,16 @@ First you must create a new Project:
 * For ``Target Object Storage Instance``, select your Object Storage service name.
 * Click ``Create``.
 
-
-Create the Notebook or [Follow along in the DSX notebook I created](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b):
+Create the Notebook:
 * Click on your project to open up the project details panel.
 * Click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
 * For ``Notebook URL`` enter: https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/notebooks/Diet-Related-Disease-Exploratory.ipynb
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
-
-* If you're [following along](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b), you can skip [step 2.1](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/README.md#1-download-our-new-dataframe-from-dsx) and just run the notebook as is!
+* You should be able to [run each cell](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#3-run-the-notebook) as is one by one.
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
-
 
 ### 3. Run the notebook
 
@@ -154,17 +156,19 @@ options to specify exactly what you want shared from your notebook:
 
 Unfortunately, in DSX we cannot download our dataframe as a csv in one line of code, but we can download it to DSX so that   it can be downloaded and used elsewhere as well as for other projects. I demonstrate how to do this in the notebook.
 
-Once you follow along, you can take the new .csv (found under "Data Services" --> "Object Storage" from the top button) and upload it to Watson Analytics. Again, if you do not have an account, you'll want to set one up. Once you are logged in and ready to go, you can upload the data (saved in this repo as df_focusedvalues.csv) to your Watson platform.
+If you viewed the notebook in the link you can access the data frame csv [here](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv) as df_focusedvalues.csv.
+
+Once you follow along or download the df_focusedvalues.csv in the data folder on this github, you can take the new data and upload it to Watson Analytics. If you're doing this on your own and you followed the steps in the notebook you can find your data under "Data Services" --> "Object Storage" from the top button and then upload it to Watson Analytics (see step below). Again, if you do not have an account, you'll want to set one up. Once you are logged in and ready to go, you can upload the data (saved in this repo as [df_focusedvalues.csv](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv)) to your Watson platform.
     
 ### 2. Upload our new dataframe csv into Watson Analytics
 
-Once you login to Watson Analytics you can upload the csv you just downloaded and use it in your next steps. Do this in the "data" section and push "New data". This should only take a few moments to load.
+Once you create an account and login to Watson Analytics you can upload the csv you just downloaded and use it in your next steps. Do this in the "data" section and push "New data". This should only take a few moments to load.
 
 ![](doc/source/images/Screen%20Shot%202017-10-30%20at%204.06.20%20PM.png)
 
 ### 3. Check out the discoveries that Watson Analytics offers
 
-Once you've set up your account, you can see that the Watson plaform has three sections: data, discover and display. You uploaded your data to the "data" section, but now you'll want to go to the "discover" section. Under "discover" you can select your dataframe dataset for use. Once you've selected it, the Watson platform will suggest different insights to visualize. You can move forward with its selections or your own, or both. You can take a look at mine here (you'll need an account to view): https://ibm.co/2xAlAkq or see the screen shots attached to this repo. You can also go into the "display" section and create a shareable layout like mine (again you'll need an account): https://ibm.co/2A38Kg6.
+Once you've set up your account, you can see that the Watson plaform has three sections: data, discover and display. You uploaded your data to the "data" section, but now you'll want to go to the "discover" section. Under "discover" you can select your dataframe dataset for use. Once you've selected it, the Watson platform will suggest different insights to visualize. You can move forward with its selections or create your own, or both. You can take a look at mine here (you'll need an account to view): https://ibm.co/2xAlAkq or see the screen shots attached to this repo. You can also go into the "display" section and create a shareable layout like mine (again you'll need an account): https://ibm.co/2A38Kg6.
 
 ![](doc/source/images/Screen%20Shot%202017-10-30%20at%204.05.53%20PM.png)
 
