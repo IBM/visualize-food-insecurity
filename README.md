@@ -154,15 +154,11 @@ options to specify exactly what you want shared from your notebook:
 
 ### 1. Download our new dataframe from DSX
 
-Unfortunately, in DSX we cannot download our dataframe as a csv in one line of code, but we can download it to DSX so that   it can be downloaded and used elsewhere as well as for other projects. I demonstrate how to do this in the notebook.
-
-If you viewed the notebook in the link you can access the data frame csv [here](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv) as df_focusedvalues.csv.
-
-Once you follow along or download the df_focusedvalues.csv in the data folder on this github, you can take the new data and upload it to Watson Analytics. If you're doing this on your own and you followed the steps in the notebook you can find your data under "Data Services" --> "Object Storage" from the top button and then upload it to Watson Analytics (see step below). Again, if you do not have an account, you'll want to set one up. Once you are logged in and ready to go, you can upload the data (saved in this repo as [df_focusedvalues.csv](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv)) to your Watson platform.
+The last section of the notebook involves steps to download a dataframe from DSX so that it can be used in Watson Analytics. For convenience, that data frame file (`df_focusdvalues.csv`) is also available in this repo and can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv). Download this csv file for use in the following steps.
     
 ### 2. Upload our new dataframe csv into Watson Analytics
 
-Once you create an account and login to Watson Analytics you can upload the csv you just downloaded and use it in your next steps. Do this in the "data" section and push "New data". This should only take a few moments to load.
+Once you create an account and login to [IBM Watson Analytics](https://www.ibm.com/watson-analytics) you can upload the csv you just downloaded and use it in your next steps. Do this in the "data" section and push "New data". This should only take a few moments to load.
 
 ![](doc/source/images/Screen%20Shot%202017-10-30%20at%204.06.20%20PM.png)
 
