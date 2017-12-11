@@ -154,7 +154,7 @@ options to specify exactly what you want shared from your notebook:
 
 ### 1. Download our new dataframe from DSX
 
-The last section of the notebook involves steps to download a dataframe from DSX so that it can be used in Watson Analytics. For convenience, that data frame file (`df_focusdvalues.csv`) is also available in this repo and can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv). Download either version of the csv file for use in the following steps.
+The last section of the notebook involves steps to download a dataframe from DSX so that it can be used in Watson Analytics. For convenience, that data frame file (`df_focusdvalues.csv`) is also available in this repo and can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv). Download either version of the csv file for use in the following steps. The description of the data values can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/mjmyers/data/Variable%20list.xlsx).
     
 ### 2. Upload our new dataframe csv into Watson Analytics
 
