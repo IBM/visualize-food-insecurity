@@ -21,7 +21,7 @@ The government data that I use in this Code Pattern has been conveniently combin
 ## Included components
 
 * [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
-* [IBM Watson Analytics](https://www.ibm.com/watson-analytics): NEED BLURB HERE
+* [IBM Watson Analytics](https://www.ibm.com/watson-analytics): Provides smart data discovery, automated predictive analytics and cognitive capabilities that enables users to interact with data conversationally.
 * [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
 * [PixieDust](https://github.com/ibm-watson-data-lab/pixiedust): Provides a Python helper library for IPython Notebook.
 * [Watson Discovery](https://www.ibm.com/watson/developercloud/discovery.html): A cognitive search and content analytics engine for applications to identify patterns, trends, and actionable insights.
@@ -154,11 +154,13 @@ options to specify exactly what you want shared from your notebook:
 
 ### 1. Download our new dataframe from DSX
 
-The last section of the notebook involves steps to download a dataframe from DSX so that it can be used in Watson Analytics. For convenience, that data frame file (`df_focusdvalues.csv`) is also available in this repo and can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv). Download this csv file for use in the following steps.
+The last section of the notebook involves steps to download a dataframe from DSX so that it can be used in Watson Analytics. For convenience, that data frame file (`df_focusdvalues.csv`) is also available in this repo and can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv). Download either version of the csv file for use in the following steps.
     
 ### 2. Upload our new dataframe csv into Watson Analytics
 
 Once you create an account and login to [IBM Watson Analytics](https://www.ibm.com/watson-analytics) you can upload the csv you just downloaded and use it in your next steps. Do this in the "data" section and push "New data". This should only take a few moments to load.
+
+> Note: If you are using a free trial version of Watson Analytics, the data download may fail due to storage limits. In this case, delete any pre-loaded sample data sets to make room for the `df_focusdvalues.csv` data file.
 
 ![](doc/source/images/Screen%20Shot%202017-10-30%20at%204.06.20%20PM.png)
 
