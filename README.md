@@ -35,7 +35,7 @@ The government data that I use in this Code Pattern has been conveniently combin
 
 # Watch the Video
 
-!!! COMING
+[![](http://img.youtube.com/vi/TRvABjKkcqE/0.jpg)](https://youtu.be/TRvABjKkcqE)
 
 # Steps
 
