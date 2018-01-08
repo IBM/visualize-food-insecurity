@@ -91,6 +91,13 @@ Create the Notebook:
 * Click ``Create Notebook``.
 * You should be able to [run each cell](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#3-run-the-notebook) as is one by one.
 
+Upload the data as data assets:
+* This project has 1 dataset. Upload it as a data asset in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.   
+* Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). 
+* Click on the "1001" data icon in the top right. The data files should show up. 
+* Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
+* Make sure your combined_data.csv is saved as df_data_1, so that it is consistent with my notebook and so you do not have to change the code.
+
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
 
 ### 3. Run the notebook
