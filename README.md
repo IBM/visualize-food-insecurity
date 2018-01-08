@@ -6,7 +6,7 @@ Often in data science we do a great deal of work to glean insights that have an 
 
 For this particular Code Pattern, food insecurity throughout the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. For some context, this problem is a more and more relevant problem for the United States as obesity and diabetes rise and two out of three adult Americans are considered obese, one third of American minors are considered obsese, nearly ten percent of Americans have diabetes and nearly fifty percent of the African American population have heart disease. Even more, cardiovascular disease is the leading global cause of death, accounting for 17.3 million deaths per year, and rising. Native American populations more often than not do not have grocery stores on their reservation... and all of these trends are on the rise. The problem lies not only in low access to fresh produce, but food culture, low education on healthy eating as well as racial and income inequality.
 
-The government data that I use in this Code Pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/. For the data we use in the second part of this Code Pattern with Watson Analytics, you can go to [df_focusedvalues.csv](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv) in this repo. You will need a DSX account and a Watson Analytics account to run the duration of this Code Pattern, but you can follow along with the [steps](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#steps) below!
+The government data that I use in this Code Pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/. For the data we use in the second part of this Code Pattern with Watson Analytics, you can go to [df_focusedvalues.csv](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv) in this repo. You will need a DSX account and a Watson Analytics account to run the duration of this Code Pattern, but you can follow along with the [steps](https://github.com/IBM/visualize-food-insecurity#steps) below!
 
 ![](doc/source/images/architecture.png)
 
@@ -90,6 +90,13 @@ Create the Notebook:
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 * You should be able to [run each cell](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#3-run-the-notebook) as is one by one.
+
+Upload the data as data assets:
+* This project has 1 dataset. Upload it as a data asset in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.   
+* Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). 
+* Click on the "1001" data icon in the top right. The data files should show up. 
+* Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
+* Make sure your combined_data.csv is saved as df_data_1, so that it is consistent with my notebook and so you do not have to change the code.
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
 
