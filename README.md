@@ -4,9 +4,9 @@ This Code Pattern will guide you through downloading, cleaning and visualizing d
 
 Often in data science we do a great deal of work to glean insights that have an impact on society or a subset of it and yet, often, we end up not communicating our findings or communicating them ineffectively to non data science audiences. That's where visualizations become the most powerful. By visualizing our insights and predictions, we, as data scientists and data lovers, can make a real impact and educate those around us that might not have had the same opportunity to work on a project of the same subject. By visualizing our findings and those insights that have the most power to do social good, we can bring awareness and maybe even change. This Code Pattern walks you through how to do just that, with IBM's Data Science Experience (DSX), Pandas, Pixie Dust and Watson Analytics.
 
-For this particular Code Pattern, food insecurity throughout the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. For some context, this problem is a more and more relevant problem for the United States as obesity and diabetes rise and two out of three adult Americans are considered obese, one third of American minors are considered obsese, nearly ten percent of Americans have diabetes and nearly fifty percent of the African American population have heart disease. Even more, cardiovascular disease is the leading global cause of death, accounting for 17.3 million deaths per year, and rising. Native American populations more often than not do not have grocery stores on their reservation... and all of these trends are on the rise. The problem lies not only in low access to fresh produce, but food culture, low education on healthy eating as well as racial and income inequality.
+For this particular Code Pattern, food insecurity throughout the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. For some context, this problem is a more and more relevant problem for the United States as obesity and diabetes rise and two out of three adult Americans are considered obese, one third of American minors are considered obese, nearly ten percent of Americans have diabetes and nearly fifty percent of the African American population have heart disease. Even more, cardiovascular disease is the leading global cause of death, accounting for 17.3 million deaths per year, and rising. Native American populations more often than not do not have grocery stores on their reservation... and all of these trends are on the rise. The problem lies not only in low access to fresh produce, but food culture, low education on healthy eating as well as racial and income inequality.
 
-The government data that I use in this Code Pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/. For the data we use in the second part of this Code Pattern with Watson Analytics, you can go to [df_focusedvalues.csv](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv) in this repo. You will need a DSX account and a Watson Analytics account to run the duration of this Code Pattern, but you can follow along with the [steps](https://github.com/IBM/visualize-food-insecurity#steps) below!
+The government data that I use in this Code Pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv.zip. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/. For the data we use in the second part of this Code Pattern with Watson Analytics, you can go to [df_focusedvalues.csv](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv) in this repo. You will need a DSX account and a Watson Analytics account to run the duration of this Code Pattern, but you can follow along with the [steps](https://github.com/IBM/visualize-food-insecurity#steps) below!
 
 ![](doc/source/images/architecture.png)
 
@@ -57,7 +57,7 @@ Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By sig
 
 To create these services:
 * Login to your [IBM Cloud](http://bluemix.net) account.
-* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If not already used, name your service ``DSX-Spark``. 
+* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If not already used, name your service ``DSX-Spark``.
 * Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If not already used, name your service ``DSX-ObjectStorage``.
 
 > Note: When creating your Object Storage service, select the ``Swift`` storage type in order to avoid having to pay an upgrade fee.
@@ -76,9 +76,9 @@ Take note of your service names as you will need to select them in the following
 First you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
 * Click on ``New project`` under ``Recently updated projects``.
-* Enter a ``Name`` and optional ``Description``. 
+* Enter a ``Name`` and optional ``Description``.
 * For ``Spark Service``, select your Apache Spark service name.
-* For ``Storage Type``, select the ``Object Storage (Swift API)`` option.
+* For ``Storage Type``, select the ``DSX Object Storage`` option.
 * For ``Target Object Storage Instance``, select your Object Storage service name.
 * Click ``Create``.
 
@@ -86,16 +86,18 @@ Create the Notebook:
 * Click on your project to open up the project details panel.
 * Click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* For ``Notebook URL`` enter: https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/notebooks/Diet-Related-Disease-Exploratory.ipynb
+* For ``Notebook URL`` enter: https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 * You should be able to [run each cell](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#3-run-the-notebook) as is one by one.
 
 Upload the data as data assets:
-* This project has 1 dataset. Upload it as a data asset in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.   
-* Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). 
-* Click on the "1001" data icon in the top right. The data files should show up. 
-* Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
+* Extract the zip file in this repo: `data/combined_data.csv.zip`
+* This project has 1 dataset. Upload it as a data asset in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.
+* Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard).
+* Click on the cell with the comment `#Insert Pandas Data Frame`
+* Click on the "1001" data icon in the top right. The data files should show up.
+* Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in the highlighted cell.
 * Make sure your combined_data.csv is saved as df_data_1, so that it is consistent with my notebook and so you do not have to change the code.
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
@@ -162,7 +164,7 @@ options to specify exactly what you want shared from your notebook:
 ### 1. Download our new dataframe from DSX
 
 The last section of the notebook involves steps to download a dataframe from DSX so that it can be used in Watson Analytics. For convenience, that data frame file (`df_focusdvalues.csv`) is also available in this repo and can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv). Download either version of the csv file for use in the following steps. The description of the data values can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/mjmyers/data/Variable%20list.xlsx).
-    
+
 ### 2. Upload our new dataframe csv into Watson Analytics
 
 Once you create an account and login to [IBM Watson Analytics](https://www.ibm.com/watson-analytics) you can upload the csv you just downloaded and use it in your next steps. Do this in the "data" section and push "New data". This should only take a few moments to load.
