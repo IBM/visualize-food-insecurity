@@ -60,8 +60,6 @@ To create these services:
 * Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If not already used, name your service ``DSX-Spark``.
 * Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If not already used, name your service ``DSX-ObjectStorage``.
 
-> Note: When creating your Object Storage service, select the ``Swift`` storage type in order to avoid having to pay an upgrade fee.
-
 Take note of your service names as you will need to select them in the following steps.
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
@@ -71,6 +69,7 @@ Take note of your service names as you will need to select them in the following
 > Note: if you would prefer to skip these steps and just follow along by viewing the completed Notebook, simply:
 > * View the completed [notebook](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
+> * Load the example with output from this repository into DSX for analysis `example_output/Diet-Related-Disease-Exploratory.ipynb`
 > * When complete, continue this code pattern by jumping ahead to the [Analyze the data in Watson Analytics](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#analyze-the-data-in-watson-analytics) section.
 
 First you must create a new Project:
