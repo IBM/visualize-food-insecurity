@@ -77,7 +77,7 @@ First you must create a new Project:
 * Click on ``New project`` under ``Recently updated projects``.
 * Enter a ``Name`` and optional ``Description``.
 * For ``Spark Service``, select your Apache Spark service name.
-* For ``Storage Type``, select the ``Watson Studio Object Storage`` option.
+* For ``Storage Type``, select the ``Object Storage`` option.
 * For ``Target Object Storage Instance``, select your Object Storage service name.
 * Click ``Create``.
 
