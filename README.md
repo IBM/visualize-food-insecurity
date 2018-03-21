@@ -53,7 +53,9 @@ This Code Pattern consists of two activities:
 
 ### 1. Sign up for the Watson Studio
 
-Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). By signing up for the Watson Studio, two services: ``Apache Spark`` and ``Object Storage`` will be created in your IBM Cloud account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
+
+> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
 To create these services:
 * Login to your [IBM Cloud](http://bluemix.net) account.
@@ -82,13 +84,16 @@ First you must create a new Project:
 * Click ``Create``.
 
 Create the Notebook:
-* Click on your project to open up the project details panel.
-* Click ``add notebooks``.
-* Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* For ``Notebook URL`` enter: https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb
+* In [Watson Studio](https://dataplatform.ibm.com), click on `Create notebook` to create a notebook.
+* Create a project if necessary, provisioning an object storage service if required.
+* In the `Assets` tab, select the `Create notebook` option.
+* Select the `From URL` tab.
+* Enter a name for the notebook.
+* Optionally, enter a description for the notebook.
+* Enter this Notebook URL: https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb
 * For ``Spark Service``, select your Apache Spark service name.
-* Click ``Create Notebook``.
-* You should be able to [run each cell](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#3-run-the-notebook) as is one by one.
+* Select the free Anaconda runtime.
+* Click the `Create` button.
 
 Upload the data as data assets:
 * Extract the zip file in this repo: `data/combined_data.csv.zip`
