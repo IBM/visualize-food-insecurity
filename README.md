@@ -91,7 +91,6 @@ Create the Notebook:
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
 * Enter this Notebook URL: https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb
-* For ``Spark Service``, select your Apache Spark service name.
 * Select the free Anaconda runtime.
 * Click the `Create` button.
 
