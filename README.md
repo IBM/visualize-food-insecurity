@@ -103,7 +103,7 @@ Upload the data as data assets:
 * Click on the cell with the comment `#Insert Pandas Data Frame`
 * Click on the "1001" data icon in the top right. The data files should show up.
 * Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in the highlighted cell.
-* Make sure your combined_data.csv is saved as df_data_1, so that it is consistent with my notebook and so you do not have to change the code.
+* Make sure your `combined_data.csv` is saved as `df_data_1`, so that it is consistent with my notebook and so you do not have to change the code.
 
 ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
 
