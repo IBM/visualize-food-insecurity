@@ -64,7 +64,7 @@ Log in or sign up for IBM's [Watson Studio](https://dataplatform.ibm.com).
 > * View the completed [notebook](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
 > * Load the example with output from this repository into Watson Studio for analysis `example_output/Diet-Related-Disease-Exploratory.ipynb`
-> * When complete, continue this code pattern by jumping ahead to the [Analyze the data in Watson Analytics](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#analyze-the-data-in-watson-analytics) section.
+> * When complete, continue this code pattern by jumping ahead to the [Analyze the data in Watson Analytics](#analyze-the-data-in-watson-analytics) section.
 
 ### 2. Create a new Watson Studio project
 
@@ -183,7 +183,7 @@ options to specify exactly what you want shared from your notebook:
 
 ## Analyze the data in Watson Analytics
 
-1. [Download our new dataframe from Watson Studio](#1-download-our-new-dataframe-from-dsx)
+1. [Download our new dataframe from Watson Studio](#1-download-our-new-dataframe-from-watson-studio)
 2. [Upload our new dataframe csv into Watson Analytics](#2-upload-our-new-dataframe-csv-into-watson-analytics)
 3. [Check out the discoveries that Watson Analytics offers](#3-check-out-the-discoveries-that-watson-analytics-offers)
 4. [Suggest different relationships to visualize in the display section of Watson Analytics](#4-suggest-different-relationships-to-visualize-in-the-display-section-of-watson-analytics)
