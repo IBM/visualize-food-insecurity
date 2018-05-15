@@ -46,68 +46,90 @@ This Code Pattern consists of two activities:
 * [Run a Jupyter notebook in the IBM Watson Studio](#run-a-jupyter-notebook-in-the-ibm-data-science-experience)
 * [Anaylze the data in Watson Analytics](#analyze-the-data-in-watson-analytics).
 
-## Run a Jupyter notebook in the IBM Watson Studio
+## Run using a Jupyter notebook in the IBM Watson Studio
 
-1. [Sign up for the Watson Studio](#1-sign-up-for-the-data-science-experience)
-2. [Create the notebook](#2-create-the-notebook)
-3. [Run the notebook](#3-run-the-notebook)
-4. [Save and Share](#4-save-and-share)
+1. [Sign up for the Watson Studio](#1-sign-up-for-the-watson-studio)
+2. [Create a new Watson Studio project](#2-create-a-new-watson-studio-project)
+3. [Associate a Spark service](#3-associate-a-spark-service)
+4. [Create the notebook](#4-create-the-notebook)
+5. [Upload data](#5-upload-data)
+6. [Run the notebook](#6-run-the-notebook)
+7. [Save and Share](#7-save-and-share)
 
 ### 1. Sign up for the Watson Studio
 
-Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
+Log in or sign up for IBM's [Watson Studio](https://dataplatform.ibm.com).
 
-> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
-
-To create these services:
-* Login to your [IBM Cloud](http://bluemix.net) account.
-* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If not already used, name your service ``Apache Spark``.
-* Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If not already used, name your service ``Watson Studio-ObjectStorage``.
-
-Take note of your service names as you will need to select them in the following steps.
-
-![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
-
-### 2. Create the Notebook
-
-> Note: if you would prefer to skip these steps and just follow along by viewing the completed Notebook, simply:
+> Note: if you would prefer to skip the remaining Watson Studio set-up steps and just follow along by viewing the completed Notebook, simply:
 > * View the completed [notebook](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
 > * Load the example with output from this repository into Watson Studio for analysis `example_output/Diet-Related-Disease-Exploratory.ipynb`
 > * When complete, continue this code pattern by jumping ahead to the [Analyze the data in Watson Analytics](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#analyze-the-data-in-watson-analytics) section.
 
-First you must create a new Project:
-* From the [IBM Watson Studio page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
-* Click on ``New project`` under ``Recently updated projects``.
-* Enter a ``Name`` and optional ``Description``.
-* For ``Spark Service``, select your Apache Spark service name.
-* For ``Storage Type``, select the ``Object Storage`` option.
-* For ``Target Object Storage Instance``, select your Object Storage service name.
-* Click ``Create``.
+### 2. Create a new Watson Studio project
 
-Create the Notebook:
-* In [Watson Studio](https://dataplatform.ibm.com), click on `Create notebook` to create a notebook.
-* Create a project if necessary, provisioning an object storage service if required.
-* In the `Assets` tab, select the `Create notebook` option.
-* Select the `From URL` tab.
-* Enter a name for the notebook.
-* Optionally, enter a description for the notebook.
-* Enter this Notebook URL: https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb
-* Select the free Anaconda runtime.
+* Select the `New Project` option from the Watson Studio landing page and choose the `Data Science` option.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_choices.png)
+
+* To create a project in Watson Studio, give the project a name and either create a new `Cloud Object Storage` service or select an existing one from your IBM Cloud account.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/new_project.png)
+
+* Upon a successful project creation, you are taken to a dashboard view of your project. Take note of the `Assets` and `Settings` tabs, we'll be using them to associate our project with any external assets (datasets and notebooks) and any IBM cloud services.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_dashboard.png)
+
+### 3. Associate a Spark service
+
+* From the project dashboard view, click the `Settings` tab, click the `+ Add service` button and choose the `Spark` option from the list.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/add_service.png)
+
+* Create your Spark service by selecting an existing Spark service or creating a new one.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/add_existing_spark_service.png)
+
+It should now appear in your _Services_ list.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/spark_in_service_list.png)
+
+### 4. Create the Notebook
+
+* From the project dashboard view, click the `Assets` tab, click the `+ New notebook` button.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/new_notebook.png)
+
+* Give your notebook a name and select your desired runtime, in this case we'll be using the associated Spark runtime.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/notebook_spark.png)
+
+* Now select the `From URL` tab to specify the URL to the notebook in this repository.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/notebook_with_url_spark.png)
+
+* Enter this URL:
+
+```
+https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb
+```
+
 * Click the `Create` button.
 
-Upload the data as data assets:
+### 5. Upload data
+
+* Return to the project dashboard view and select the `Assets` tab.
 * Extract the zip file in this repo: `data/combined_data.csv.zip`
-* This project has 1 dataset. Upload it as a data asset in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.
+* This project has 1 dataset. Upload it as data asset in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.
 * Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard).
 * Click on the cell with the comment `#Insert Pandas Data Frame`
 * Click on the "1001" data icon in the top right. The data files should show up.
 * Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in the highlighted cell.
 * Make sure your `combined_data.csv` is saved as `df_data_1`, so that it is consistent with my notebook and so you do not have to change the code.
 
-![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.23.26%20PM.png)
+![](doc/source/images/project-assets.png)
 
-### 3. Run the notebook
+### 6. Run the notebook
 
 When a notebook is executed, what is actually happening is that each code cell in
 the notebook is executed, in order, from top to bottom.
@@ -133,7 +155,7 @@ There are several ways to execute the code cells in your notebook:
     panel. Here you can schedule your notebook to be executed once at some future
     time, or repeatedly at your specified interval.
 
-### 4. Save and Share
+### 7. Save and Share
 
 #### How to save your work:
 
