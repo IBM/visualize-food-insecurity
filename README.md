@@ -43,7 +43,7 @@ The government data that I use in this Code Pattern has been conveniently combin
 
 This Code Pattern consists of two activities:
 
-* [Run a Jupyter notebook in the IBM Watson Studio](#run-a-jupyter-notebook-in-the-ibm-data-science-experience)
+* [Run a Jupyter notebook in the IBM Watson Studio](#run-using-a-jupyter-notebook-in-the-ibm-watson-studio).
 * [Anaylze the data in Watson Analytics](#analyze-the-data-in-watson-analytics).
 
 ## Run using a Jupyter notebook in the IBM Watson Studio
