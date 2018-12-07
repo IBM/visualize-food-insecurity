@@ -110,7 +110,7 @@ It should now appear in your _Services_ list.
 * Enter this URL:
 
 ```
-https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb
+https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related%20Disease%20Exploratory.ipynb
 ```
 
 * Click the `Create` button.
