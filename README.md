@@ -8,7 +8,7 @@ Often in data science we do a great deal of work to glean insights that have an 
 
 For this particular Code Pattern, food insecurity throughout the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. For some context, this problem is a more and more relevant problem for the United States as obesity and diabetes rise and two out of three adult Americans are considered obese, one third of American minors are considered obese, nearly ten percent of Americans have diabetes and nearly fifty percent of the African American population have heart disease. Even more, cardiovascular disease is the leading global cause of death, accounting for 17.3 million deaths per year, and rising. Native American populations more often than not do not have grocery stores on their reservation... and all of these trends are on the rise. The problem lies not only in low access to fresh produce, but food culture, low education on healthy eating as well as racial and income inequality.
 
-The government data that I use in this Code Pattern has been conveniently combined into a dataset for our use, which you can find in this repo under combined_data.csv.zip. You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/. For the data we use in the second part of this Code Pattern with Watson Analytics, you can go to [df_focusedvalues.csv](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv) in this repo. You will need a Watson Studio account and a Watson Analytics account to run the duration of this Code Pattern, but you can follow along with the [steps](https://github.com/IBM/visualize-food-insecurity#steps) below!
+The government data that I use in this Code Pattern has been conveniently combined into a dataset for our use, which you can find in this repo under [`combined_data.csv.zip`](data/combined_data.csv.zip). You can find the original, government data from the US Bureau of Labor Statistics https://www.bls.gov/cex/ and The United States Department of Agriculture https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/. For the data we use in the second part of this Code Pattern with Watson Analytics, you can go to [`df_focusedvalues.csv`](data/df_focusedvalues.csv) in this repo. You will need a Watson Studio account and a Watson Analytics account to run the duration of this Code Pattern, but you can follow along with the [steps](https://github.com/IBM/visualize-food-insecurity#steps) below!
 
 ![](doc/source/images/architecture.png)
 
@@ -22,21 +22,21 @@ The government data that I use in this Code Pattern has been conveniently combin
 
 ## Included components
 
-* [IBM Watson Studio](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 * [IBM Watson Analytics](https://www.ibm.com/watson-analytics): Provides smart data discovery, automated predictive analytics and cognitive capabilities that enables users to interact with data conversationally.
-* [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
-* [PixieDust](https://github.com/ibm-watson-data-lab/pixiedust): Provides a Python helper library for IPython Notebook.
+* [Jupyter Notebook](https://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
+* [PixieDust](https://github.com/pixiedust/pixiedust): Provides a Python helper library for IPython Notebook.
 
 ## Featured technologies
 
-* [Cloud](https://www.ibm.com/developerworks/learn/cloud/): Accessing computer and information technology resources through the Internet.
+* [Cloud](https://developer.ibm.com/depmodels/cloud/): Accessing computer and information technology resources through the Internet.
 * [Data Science](https://medium.com/ibm-data-science-experience/): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
 * [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
-* [pandas](http://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
+* [pandas](https://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
 
 # Watch the Video
 
-[![](http://img.youtube.com/vi/TRvABjKkcqE/0.jpg)](https://youtu.be/TRvABjKkcqE)
+[![](https://img.youtube.com/vi/TRvABjKkcqE/0.jpg)](https://youtu.be/TRvABjKkcqE)
 
 # Steps
 
@@ -57,10 +57,10 @@ This Code Pattern consists of two activities:
 
 ### 1. Sign up for the Watson Studio
 
-Log in or sign up for IBM's [Watson Studio](https://dataplatform.ibm.com).
+Log in or sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/).
 
 > Note: if you would prefer to skip the remaining Watson Studio set-up steps and just follow along by viewing the completed Notebook, simply:
-> * View the completed [notebook](https://dataplatform.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b) and its outputs, as is.
+> * View the completed [notebook](https://dataplatform.cloud.ibm.com/analytics/notebooks/f3b6ba4b-d983-4e87-a9ff-81a2fe3ba843/view?access_token=d152a743efdebcec1d75c816f1bc99eacb55c783c72e94a4d32f791ddb10096b) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
 > * Load the example with output from this repository into Watson Studio for analysis `example_output/Diet-Related-Disease-Exploratory.ipynb`
 > * When complete, continue this code pattern by jumping ahead to the [Analyze the data in Watson Analytics](#analyze-the-data-in-watson-analytics) section.
@@ -189,7 +189,7 @@ options to specify exactly what you want shared from your notebook:
 
 ### 1. Download our new dataframe from Watson Studio
 
-The last section of the notebook involves steps to download a dataframe from Watson Studio so that it can be used in Watson Analytics. For convenience, that data frame file (`df_focusdvalues.csv`) is also available in this repo and can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/visualize-food-insecurity/data/df_focusedvalues.csv). Download either version of the csv file for use in the following steps. The description of the data values can be found [here](https://github.com/IBM/visualize-food-insecurity/blob/mjmyers/data/Variable%20list.xlsx).
+The last section of the notebook involves steps to download a dataframe from Watson Studio so that it can be used in Watson Analytics. For convenience, that data frame file (`df_focusdvalues.csv`) is also available in this repo and can be found [here](data/df_focusedvalues.csv). Download either version of the csv file for use in the following steps. The description of the data values can be found [here](data/Variable%20list.xlsx).
 
 ### 2. Upload our new dataframe csv into Watson Analytics
 
@@ -219,18 +219,18 @@ Like many data science investigations, this analysis could have a big impact on 
 
 # Links
 
-* [Create Watson Studio Notebooks](https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html)
+* [Create Watson Studio Notebooks](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/creating-notebooks.html)
 * [Bureau of Labor Statistics](https://www.bls.gov/cex/)
 * [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/)
 
 # Learn more
 
-* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
+* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/technologies/data-science/)
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
-* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://datascience.ibm.com/)
-* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
+* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://www.ibm.com/cloud/watson-studio)
+* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://cloud.ibm.com/catalog/services/apache-spark)
 
 # License
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
