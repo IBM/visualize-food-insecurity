@@ -1,10 +1,10 @@
-## Visualizing Food Insecurity with Pixie Dust and Watson Analytics
+## Visualizing Food Insecurity with PixieDust and Watson Analytics
 
 > Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
 
 This Code Pattern will guide you through downloading, cleaning and visualizing data using different tools. In particular this Code Pattern showcases food insecurity in the US, along with its associated factors.
 
-Often in data science we do a great deal of work to glean insights that have an impact on society or a subset of it and yet, often, we end up not communicating our findings or communicating them ineffectively to non data science audiences. That's where visualizations become the most powerful. By visualizing our insights and predictions, we, as data scientists and data lovers, can make a real impact and educate those around us that might not have had the same opportunity to work on a project of the same subject. By visualizing our findings and those insights that have the most power to do social good, we can bring awareness and maybe even change. This Code Pattern walks you through how to do just that, with IBM's Watson Studio, Pandas, Pixie Dust and Watson Analytics.
+Often in data science we do a great deal of work to glean insights that have an impact on society or a subset of it and yet, often, we end up not communicating our findings or communicating them ineffectively to non data science audiences. That's where visualizations become the most powerful. By visualizing our insights and predictions, we, as data scientists and data lovers, can make a real impact and educate those around us that might not have had the same opportunity to work on a project of the same subject. By visualizing our findings and those insights that have the most power to do social good, we can bring awareness and maybe even change. This Code Pattern walks you through how to do just that, with IBM's Watson Studio, Pandas, PixieDust and Watson Analytics.
 
 For this particular Code Pattern, food insecurity throughout the US is focused on. Low access, diet-related diseases, race, poverty, geography and other factors are considered by using open government data. For some context, this problem is a more and more relevant problem for the United States as obesity and diabetes rise and two out of three adult Americans are considered obese, one third of American minors are considered obese, nearly ten percent of Americans have diabetes and nearly fifty percent of the African American population have heart disease. Even more, cardiovascular disease is the leading global cause of death, accounting for 17.3 million deaths per year, and rising. Native American populations more often than not do not have grocery stores on their reservation... and all of these trends are on the rise. The problem lies not only in low access to fresh produce, but food culture, low education on healthy eating as well as racial and income inequality.
 
@@ -122,8 +122,8 @@ https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Rela
 * This project has 1 dataset. Upload it as data asset in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.
 * Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard).
 * Click on the cell with the comment `#Insert Pandas Data Frame`
-* Click on the "1001" data icon in the top right. The data files should show up.
-* Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in the highlighted cell.
+* Click on the `1001` data icon in the top right. The data files should show up.
+* Click on each and select `Insert Pandas Data Frame`. Once you do that, a whole bunch of code will show up in the highlighted cell.
 * Make sure your `combined_data.csv` is saved as `df_data_1`, so that it is consistent with my notebook and so you do not have to change the code.
 
 ![](doc/source/images/project-assets.png)
@@ -168,13 +168,13 @@ Under the `File` menu, there are several ways to save your notebook:
 
 #### How to share your work:
 
-You can share your notebook by selecting the “Share” button located in the top
+You can share your notebook by selecting the `Share` button located in the top
 right section of your notebook panel. The end result of this action will be a URL
 link that will display a “read-only” version of your notebook. You have several
 options to specify exactly what you want shared from your notebook:
 
 * `Only text and output`: will remove all code cells from the notebook view.
-* `All content excluding sensitive code cells`:  will remove any code cells
+* `All content excluding sensitive code cells`: will remove any code cells
   that contain a *sensitive* tag. For example, `# @hidden_cell` is used to protect
   your dashDB credentials from being shared.
 * `All content, including code`: displays the notebook as is.
@@ -201,7 +201,7 @@ Once you create an account and login to [IBM Watson Analytics](https://www.ibm.c
 
 ### 3. Check out the discoveries that Watson Analytics offers
 
-Once you've set up your account, you can see that the Watson plaform has three sections: data, discover and display. You uploaded your data to the "data" section, but now you'll want to go to the "discover" section. Under "discover" you can select your dataframe dataset for use. Once you've selected it, the Watson platform will suggest different insights to visualize. You can move forward with its selections or create your own, or both. You can take a look at mine here (you'll need an account to view): https://ibm.co/2xAlAkq or see the screen shots attached to this repo. You can also go into the "display" section and create a shareable layout like mine (again you'll need an account): https://ibm.co/2A38Kg6.
+Once you've set up your account, you can see that the Watson platform has three sections: data, discover and display. You uploaded your data to the "data" section, but now you'll want to go to the "discover" section. Under "discover" you can select your dataframe dataset for use. Once you've selected it, the Watson platform will suggest different insights to visualize. You can move forward with its selections or create your own, or both. You can take a look at mine here (you'll need an account to view): https://ibm.co/2xAlAkq or see the screen shots attached to this repo. You can also go into the "display" section and create a shareable layout like mine (again you'll need an account): https://ibm.co/2A38Kg6.
 
 ![](doc/source/images/Screen%20Shot%202017-10-30%20at%204.05.53%20PM.png)
 
@@ -213,7 +213,7 @@ You can see that with these visualizations the user can see the impact of food i
 
 By reviewing our visualizations both in Watson Studio and Watson, we learn that obesity and diabetes almost go hand in hand, along with food insecurity. We can also learn that this seems to be an inequality issue, both in income and race, with Black and Hispanic populations being more heavily impacted by food insecurity and diet-related diseases than those of the White and Asian populations. We can also see that school-aged children who qualify for reduced lunch are more likely obese than not whereas those that have a farm-to-school program are more unlikely to be obese.
 
-Like many data science investigations, this analysis could have a big impact on policy and people's approach to food insecurity in the U.S. What's best is that we can create many projects much like this in a quick time period and share them with others by using Pandas, Pixie Dust as well as Watson's predictive and recommended visualizations.
+Like many data science investigations, this analysis could have a big impact on policy and people's approach to food insecurity in the U.S. What's best is that we can create many projects much like this in a quick time period and share them with others by using Pandas, PixieDust as well as Watson's predictive and recommended visualizations.
 
 ![](doc/source/images/Screen%20Shot%202017-10-30%20at%204.29.41%20PM.png)
 
