@@ -85,7 +85,7 @@ This Code Pattern consists of two activities:
   * Under `Notebook URL` provide the following url: [https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb](https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb) [3]
   * For `Runtime` select the `Python 3.6` option. [4]
 
-  ![add notebook](https://github.com/IBM/pattern-utils/raw/master/watson-studio/notebook-create-url-spark-py36.png)
+  ![add notebook](https://github.com/IBM/pattern-utils/raw/master/watson-studio/notebook-create-url-py35.png)
 
 * Click the `Create` button.
 
@@ -114,7 +114,7 @@ This Code Pattern consists of two activities:
 
 * Click the `(►) Run` button to start stepping through the notebook.
 
-* Stop at the `Insert Pandas Data Frame` sections.
+* Stop at the second cell `Insert your data as a Pandas DataFrame`.
 
 * Click on the `1001` data icon in the top right. The data files should show up.
 
