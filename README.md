@@ -83,9 +83,9 @@ This Code Pattern consists of two activities:
   * Select the `From URL` tab. [1]
   * Enter a `Name` for the notebook and optionally a description. [2]
   * Under `Notebook URL` provide the following url: [https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb](https://github.com/IBM/visualize-food-insecurity/blob/master/notebooks/Diet-Related-Disease-Exploratory.ipynb) [3]
-  * For `Runtime` select the `Spark R 3.4` option. [4]
+  * For `Runtime` select the `Python 3.6` option. [4]
 
-  ![add notebook](https://github.com/IBM/pattern-utils/raw/master/watson-studio/notebook-create-url-spark-r34.png)
+  ![add notebook](https://github.com/IBM/pattern-utils/raw/master/watson-studio/notebook-create-url-spark-py36.png)
 
 * Click the `Create` button.
 
